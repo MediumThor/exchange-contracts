@@ -1,0 +1,119 @@
+{
+  "_format": "hh-sol-artifact-1",
+  "contractName": "IArcanumStakingPositions",
+  "sourceName": "contracts/staking-positions/TokenMetadata.sol",
+  "abi": [
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "positionId",
+          "type": "uint256"
+        }
+      ],
+      "name": "positionPendingRewards",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "positionId",
+          "type": "uint256"
+        }
+      ],
+      "name": "positionRewardRate",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    },
+    {
+      "inputs": [
+        {
+          "internalType": "uint256",
+          "name": "positionId",
+          "type": "uint256"
+        }
+      ],
+      "name": "positions",
+      "outputs": [
+        {
+          "components": [
+            {
+              "components": [
+                {
+                  "internalType": "uint96",
+                  "name": "balance",
+                  "type": "uint96"
+                },
+                {
+                  "internalType": "uint160",
+                  "name": "sumOfEntryTimes",
+                  "type": "uint160"
+                }
+              ],
+              "internalType": "struct IArcanumStakingPositions.ValueVariables",
+              "name": "valueVariables",
+              "type": "tuple"
+            },
+            {
+              "components": [
+                {
+                  "internalType": "uint256",
+                  "name": "idealPosition",
+                  "type": "uint256"
+                },
+                {
+                  "internalType": "uint256",
+                  "name": "rewardPerValue",
+                  "type": "uint256"
+                }
+              ],
+              "internalType": "struct IArcanumStakingPositions.RewardSummations",
+              "name": "rewardSummationsPaid",
+              "type": "tuple"
+            },
+            {
+              "internalType": "uint160",
+              "name": "previousValues",
+              "type": "uint160"
+            },
+            {
+              "internalType": "uint48",
+              "name": "lastUpdate",
+              "type": "uint48"
+            },
+            {
+              "internalType": "uint48",
+              "name": "lastDevaluation",
+              "type": "uint48"
+            }
+          ],
+          "internalType": "struct IArcanumStakingPositions.Position",
+          "name": "",
+          "type": "tuple"
+        }
+      ],
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "bytecode": "0x",
+  "deployedBytecode": "0x",
+  "linkReferences": {},
+  "deployedLinkReferences": {}
+}
