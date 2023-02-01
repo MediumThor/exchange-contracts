@@ -8,8 +8,8 @@ async function main() {
 
     console.log("Deploying contracts with the account:", deployer.address);
 
-    const rewardsTokenAddress = ethers.utils.getAddress("0xBBfeDb04Cc7d030d29Cc34dd0081f062C4C78818");
-    const stakingTokenAddress = ethers.utils.getAddress("0xe963CCCD8f5b076d70a85234E68E321e9040da17");
+    const rewardsTokenAddress = ethers.utils.getAddress("0xA860A0D97c8f9DF02C57587fbA02DBd552a97a63");
+    const stakingTokenAddress = ethers.utils.getAddress("0xA860A0D97c8f9DF02C57587fbA02DBd552a97a63");
 
     // Deploy StakingRewards
     const StakingRewards = await ethers.getContractFactory("StakingRewards");
